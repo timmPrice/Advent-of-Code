@@ -4,9 +4,9 @@ all: clean curl-request cs end
 
 clean: 
 
-	@if [ -f "./puzzle.txt" ]; then rm ./puzzle.txt; fi
-	@if [ -f "./puzzle-info.txt" ]; then rm ./puzzle-info.txt; fi
-	@if [ -f "./puzzle-input.txt" ]; then rm ./puzzle-input.txt; fi
+	rm -f puzzle.txt	
+	rm -f puzzle-info.txt
+	rm -r puzzle-input.txt
 
 	@touch puzzle.txt
 	@touch puzzle-info.txt

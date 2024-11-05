@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("aoc-machine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+261723e49aa7e56ba64a85cc54956ed96b0e76a8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c111b60769dc7dbd587282ad3db815075b401f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("aoc-machine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("aoc-machine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
