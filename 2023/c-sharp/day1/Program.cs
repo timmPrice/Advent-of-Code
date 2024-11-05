@@ -33,12 +33,5 @@ public class Program{
             
             return value;
     }
-
-    public static int SumDigist(int fd){
-        int sum = 0;
-        
-        return sum;
-
-    }
 }
 
