@@ -53,8 +53,6 @@ curl "${url}/input" --compressed \
   -H 'Priority: u=0, i' \
   -H 'TE: trailers' > puzzle-input.txt
 
-
-
 # organizing inputs
 
 touch temppuzzle.txt
@@ -63,15 +61,17 @@ sed -i '/^\s*$/d' temppuzzle.txt
 cat temppuzzle.txt > puzzle-info.txt
 rm temppuzzle.txt
 
+dotnet run
+
 # add language templates here
 
-echo -n "what language | available: (c-sharp, ocaml, ...)" 
-read -r language
+echo -n "language template | available: cs {c-sharp}, ocaml {ocaml}, ..." 
+read -r Language
 
-if [${language} = "c-sharp"]; then
-    echo "creating c# template"
-    dotnet new console -n day${AdventDay}
-elif [${language} = "ocaml"]; then
-    echo "creating ocaml template"
-    dune init project day${AdventDay}
+if [ "${Language}" = "cs" ]; then
+    echo "creating C# template"
+    dotnet new console -n day${AdventDay} --force
+    cp puzzle.txt day${AdventDay}/
+    cp puzzle-input.txt day${AdventDay}/
+    mv day${AdventDay}/ ../${AdventYear}/c-sharp/
 fi
